@@ -1232,7 +1232,7 @@ export function ItineraryPage() {
 								</div>
 							</div>
 
-							<div className="flex items-center justify-center mt-18 space-x-5">
+							<div className="flex flex-col space-y-5 md:flex-row items-center justify-center mt-18 md:space-x-5">
 								<Button className="py-6 px-8 bg-blue-500 hover:bg-blue-600 border-0 rounded-full shadow-lg shadow-blue-500/30">
 									Add things to do (hotels, places, etc.)
 								</Button>
@@ -1554,7 +1554,7 @@ export function ItineraryPage() {
 								</div>
 							</div>
 
-							<div className="flex items-center justify-center mt-18 space-x-5">
+							<div className="flex flex-col space-y-5 md:flex-row items-center justify-center mt-18 md:space-x-5">
 								<Button className="py-6 px-8 bg-blue-500 hover:bg-blue-600 border-0 rounded-full shadow-lg shadow-blue-500/30">
 									Add things to do (hotels, places, etc.)
 								</Button>
