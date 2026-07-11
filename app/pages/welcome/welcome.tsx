@@ -204,12 +204,12 @@ export function Welcome() {
                             <p className="text-white/70 text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4 line-clamp-2 sm:line-clamp-none" id="slideDescription">
                                 {slides[activeIndex].description}
                             </p>
-                            <a href="#" className="flex items-center justify-center gap-2 w-full rounded-full bg-yellow-400 text-slate-900 text-xs sm:text-sm font-semibold py-2 sm:py-2.5 hover:bg-yellow-300 transition">
+                            <NavLink to="/itinerary" className="flex items-center justify-center gap-2 w-full rounded-full bg-yellow-400 text-slate-900 text-xs sm:text-sm font-semibold py-2 sm:py-2.5 hover:bg-yellow-300 transition">
                                 Made Itinerary Now
                                 <span className="flex h-5 w-5 items-center justify-center rounded-full bg-white text-blue-700">
                                     <i className="ri-arrow-right-up-line text-xs"></i>
                                 </span>
-                            </a>
+                            </NavLink>
                         </div>
 
                         {/* Card row */}
@@ -315,9 +315,9 @@ export function Welcome() {
                                     <NavLink to="/itinerary" className="bg-blue-500 hover:bg-blue-600 text-white transition rounded-full px-5 py-2.5 text-sm font-semibold shadow-lg shadow-blue-500/30">
                                         Buat Itinerary Sekarang
                                     </NavLink>
-                                    <button className="border border-slate-200 text-slate-700 hover:bg-slate-50 transition rounded-full px-5 py-2.5 text-sm font-semibold">
+                                    <NavLink to="/about" className="border border-slate-200 text-slate-700 hover:bg-slate-50 transition rounded-full px-5 py-2.5 text-sm font-semibold">
                                         Kenali Lebih Lanjut
-                                    </button>
+                                    </NavLink>
                                 </div>
                             </div>
 
@@ -451,10 +451,10 @@ export function Welcome() {
                             </p>
                         </div>
                         <div className="flex items-center gap-4 flex-wrap">
-                            <button className="flex-shrink-0 bg-[#16404D] text-white font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition shadow-lg flex items-center gap-2 w-auto text-sm sm:text-base">
+                            <NavLink to="/itinerary" className="flex-shrink-0 bg-[#16404D] text-white font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-full transition shadow-lg flex items-center gap-2 w-auto text-sm sm:text-base">
                                 Browse More
                                 <i className="ri-arrow-right-line text-sm sm:text-base"></i>
-                            </button>
+                            </NavLink>
                             {/* Button lain jika ada */}
                         </div>
                     </div>
@@ -678,9 +678,9 @@ export function Welcome() {
                             <button id="review-cta-btn" className="bg-blue-500 text-white transition px-6 py-3 rounded-full font-bold shadow-lg  flex items-center gap-2">
                                 Do an Review
                             </button>
-                            <button id="review-cta-btn" className="bg-white text-[#34364A] transition px-6 py-3 rounded-full font-bold shadow-lg  flex items-center gap-2">
+                            <NavLink to="/itinerary" id="review-cta-btn" className="bg-white text-[#34364A] transition px-6 py-3 rounded-full font-bold shadow-lg  flex items-center gap-2">
                                 Try it yourself
-                            </button>
+                            </NavLink>
                         </div>
                     </div>
 
